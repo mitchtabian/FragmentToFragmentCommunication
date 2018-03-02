@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linLayout1"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Enter a Message"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#f2f2f2">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@null"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:id="@+id/message"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/linLayout1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Choose a Fragment"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_a"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_fragment_a"
+            android:background="@drawable/blue_onclick_grey"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_b"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_fragment_b"
+            android:background="@drawable/blue_onclick_grey"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_c"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_fragment_c"
+            android:background="@drawable/blue_onclick_grey"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
